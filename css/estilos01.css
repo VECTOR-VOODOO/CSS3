@@ -10,7 +10,6 @@ body {
   flex-direction: row;
   background: #5b7989;
   width: 80%;
-  height: 80%;
   color: #ffffff;
   border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
@@ -67,7 +66,7 @@ body {
   flex-direction: row;
   background-color: #d5c75f;
   width: 80%;
-  height: 350px;
+  /* height: 350px; */
   margin: 0 auto 0 auto;
   justify-content: space-around;
   text-align: center;
@@ -90,7 +89,7 @@ body {
   flex-direction: row;
   margin: auto;
   width: 80%;
-  height: 220px;
+  /* height: 220px; */
   background: #C6d5c5;
   color: black;
   justify-content: space-around;
