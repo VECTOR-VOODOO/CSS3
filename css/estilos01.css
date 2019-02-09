@@ -1,0 +1,164 @@
+/* Hoja de Estilo "estilos.css" */
+
+ * {
+  background: #000000;
+  margin:0px auto 0px auto;
+  font-family: "Dancing Script",cursive;
+  color: white;
+}
+
+.contenedor01 {
+  display: flex;
+  flex-direction: row;
+  background: #5b7989;
+  width: 80%;
+  height: 80px;
+  margin-top: 0.5%;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  align-items: center;
+  text-align: left;
+}
+
+.bloque01 {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  background: #5b7989;
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+  text-align: right;
+}
+
+/*
+body {
+  font-family: "Dancing Script",cursive;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contenedor {
+  margin-top: 5px;
+  width: 80%;
+  height: 80px;
+  background: #5b7989;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+}
+
+.menu {
+  background: #5b7989;
+  align-items: center;
+  align-content: right;
+  justify-content: space-between;
+  display: flex;
+  flex: 0.3;
+  list-style: none;
+  color: #ffffff;
+  vertical-align: middle;
+  text-align: right;
+  font-size: 1.2em;
+  flex-grow: 3;
+}
+
+.Contenedor1 {
+  width: 80%;
+  height: 400px;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  align-content: center;
+  background: #82c3a6;
+  align-items: center;
+  justify-content: center;
+}
+
+.block0 {
+  width: 85%;
+  height: 85%;
+}
+
+.block1 {
+  background: #5b7989;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+}
+
+.titulo-principal {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-left: 2%;
+  text-align: left;
+  text-shadow: 2px 2px #02010a;
+  color: #ffffff;
+  background: #5b7989;
+  flex-grow: 5;
+}
+
+.Contenedor2 {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  align-content: center;
+  background: #d5c75f;
+  align-items: center;
+  justify-content: center;
+}
+
+.block2 {
+  width: 40%;
+}
+
+.Contenedor3 {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  background: #d5c75f;
+}
+
+.block3 {
+  font-size: 1.2em;
+  height: 80px;
+  font-weight: bold;
+  text-align: center;
+  background: #d5c75f;
+}
+
+.Contenedor4 {
+  width: 80%;
+  height: 200px;
+  background: #C6d5c5;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  color: #000000;
+  border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+}
+ */
+
+/* nav li a {
+  display: inline;
+  text-align: right;
+  text-decoration: none;
+  list-style: none;
+} */
+
+
+  /* border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px; */
