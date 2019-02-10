@@ -67,7 +67,6 @@ body {
   flex-direction: row;
   background-color: #d5c75f;
   width: 80%;
-  /* height: 350px; */
   margin: 0 auto 0 auto;
   justify-content: space-around;
   text-align: center;
@@ -91,7 +90,6 @@ body {
   flex-direction: row;
   margin: auto;
   width: 80%;
-  /* height: 220px; */
   background: #C6d5c5;
   color: black;
   justify-content: space-around;
