@@ -5,6 +5,20 @@ body {
   font-family: "Dancing Script",cursive;
 }
 
+
+@media (max-width:899px) {    /*Móviles*/
+  .contenido {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media (min-width:900px) {    /*Desktop*/
+  .contenido {
+
+  }
+}
+
   /* @media (max-width: 900px) and (min-width: 700px) {
       .contenido {
         display: flex;
