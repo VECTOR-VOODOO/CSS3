@@ -1,120 +1,133 @@
 /* Hoja de Estilo "estilos.css" */
 
-/* #contenido {
-
-} */
-
 body {
   background: #02010a;
   font-family: "Dancing Script",cursive;
 }
 
-.contenedor01 {
-  display: flex;
-  flex-direction: row;
-  background: #5b7989;
-  width: 80%;
-  color: #ffffff;
-  border-radius: 10px 10px 0px 0px;
-  -moz-border-radius: 10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
-  margin: 0.5% auto 0px auto;
-}
+  /* @media (max-width: 900px) and (min-width: 700px) {
+      .contenido {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+      }
+  }
 
-.contenedor01 h1 {
-  margin-left: 2%;
-  text-shadow: 2px 2px #02010a;
-}
+  @media (min-width: 699px) {
+    .contenido {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  } */
 
-.bloque01 {
-  margin: auto 2% auto auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  list-style: none;
+  .contenedor01 {
+    display: flex;
+    flex-direction: row;
+    background: #5b7989;
+    width: 80%;
+    color: #ffffff;
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    margin: 0.5% auto 0px auto;
+  }
 
-}
+  .contenedor01 h1 {
+    margin-left: 2%;
+    text-shadow: 2px 2px #02010a;
+  }
 
-.bloque01 li {
-  padding: 10px;
+  .bloque01 {
+    margin: auto 2% auto auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
 
-}
+  }
 
-.bloque01 li a {
-  color: #ffffff;
-}
+  .bloque01 li {
+    padding: 10px;
 
-.activa {
-  text-decoration: none;
-}
+  }
 
-.contenedor02 {
-  display: flex;
-  flex-direction: row;
-  background: #82c3a6;
-  width: 80%;
-  height: 300px;
-  margin: 0 auto 0 auto;
-  justify-content: center;
-  align-items: center;
-}
+  .bloque01 li a {
+    color: #ffffff;
+  }
 
-.contenedor02 img {
-  width: 80%;
-  height: 80%;
-  align-content: center;
-  filter: drop-shadow(2px 2px 2px #02010a);
-}
+  .activa {
+    text-decoration: none;
+  }
 
-.contenedor03 {
-  display: flex;
-  flex-direction: row;
-  background-color: #d5c75f;
-  width: 80%;
-  margin: 0 auto 0 auto;
-  justify-content: space-around;
-  text-align: center;
-}
+  .contenedor02 {
+    display: flex;
+    flex-direction: row;
+    background: #82c3a6;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
 
-.contenedor03 img {
-  margin: 2% auto auto auto;
-  width: 80%;
-  align-items: center;
-  align-content: center;
-  filter: drop-shadow(2px 2px 2px #02010a);
-}
+  .contenedor02 img {
+    width: 80%;
+    height: 80%;
+    align-content: center;
+    filter: drop-shadow(2px 2px 2px #02010a);
+  }
 
-.contenedor03 p {
-  font-weight: bold;
-  text-align: center;
-}
+  .contenedor03 {
+    display: flex;
+    flex-direction: row;
+    background-color: #d5c75f;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    justify-content: space-around;
+    text-align: center;
+  }
 
-.contenedor04 {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  width: 80%;
-  background: #C6d5c5;
-  color: black;
-  justify-content: space-around;
-  border-radius: 0px 0px 10px 10px;
-  -moz-border-radius: 0px 0px 10px 10px;
-  -webkit-border-radius: 0px 0px 10px 10px;
-}
+  .contenedor03 img {
+    margin: 2% auto auto auto;
+    width: 80%;
+    align-items: center;
+    align-content: center;
+    filter: drop-shadow(2px 2px 2px #02010a);
+  }
 
-.contenedor04 h2 {
-  font-weight: bold;
-  text-align: center;
-}
+  .contenedor03 p {
+    font-weight: bold;
+    text-align: center;
+  }
 
-.contenedor04 p {
-  text-align: left;
-}
+  .contenedor04 {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+    background: #C6d5c5;
+    color: black;
+    justify-content: space-around;
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+  }
 
-.contenedor04 a {
-  color: black;
-  text-align: left;
-}
+  .contenedor04 h2 {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .contenedor04 p {
+    text-align: left;
+  }
+
+  .contenedor04 a {
+    color: black;
+    text-align: left;
+  }
+
 
 /* ======== CHEQUEADO Y APROBADO ========  */
 
