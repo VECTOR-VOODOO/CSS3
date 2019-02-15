@@ -1,41 +1,123 @@
 /* Hoja de Estilo "estilos.css" */
-
 body {
   background: #02010a;
   font-family: "Dancing Script",cursive;
 }
 
-
-@media (max-width:899px) {    /*Móviles*/
-  .contenido {
-    width: 100%;
-    display: flex;
-  }
-}
-
-@media (min-width:900px) {    /*Desktop*/
-  .contenido {
-
-  }
-}
-/* ============== IMPLEMENTANDO ============== */
+/* ============== IMPLEMENTANDO (EN REVISIÓN) ============== */
   @media (max-width: 899px) {
       .contenido {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center
+      }
+
+      .activa {
+        text-decoration: none;
+      }
+
+      .bloque01 {
+        flex-wrap: nowrap;
+        list-style: none;
+        display: inline-flex;
+        margin: auto;
+      }
+
+      .contenedor01 {               /* Pertenece al Menú y Título */
+        background: #5b7989;
+        color: #ffffff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px 10px 0px 0px;
+        -moz-border-radius: 10px 10px 0px 0px;
+        -webkit-border-radius: 10px 10px 0px 0px;
+        margin: 0.5% auto 0px auto;
+      }
+
+      .contenedor01 h1 {
+        margin-left: 2%;
+        text-shadow: 2px 2px #02010a;
+      }
+
+      .bloque01 a{
+        color: white;
+        padding: 10px;
+        padding-bottom: 10px;
+      }
+
+      .bloque01 nav {
+        margin: auto auto auto auto;
+      }
+
+      .contenedor02 {
+        background: #82c3a6;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 3%;
+        padding-bottom: 3%;
+      }
+
+      .contenedor02 img {
+        width: 80%;
         display: flex;
         flex-direction: column;
         margin: auto;
-        width: 100%;
+        filter: drop-shadow(2px 2px 2px #02010a);
       }
-      .contenedor01 {
+
+      .contenedor03 {
+        background: #d5c75f;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 3%;
+      }
+
+      .contenedor03 img {
+        width: 80%;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        filter: drop-shadow(2px 2px 2px #02010a);
+      }
+
+      .contenedor04 {
+        text-align: center;
+        width: 100%;
+        background: #C6d5c5;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px 0px 10px 10px;
+        -moz-border-radius: 0px 0px 10px 10px;
+        -webkit-border-radius: 0px 0px 10px 10px;
+      }
+
+      .contenedor04 h2 {
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-left: -5%;
+      }
+
+      .contenedor04 a {
+        color: #000000;
+      }
+
+      .logos {
+        width: 5%;
+        align-content: space-between;
       }
   }
 /* =========================================== */
+@media (min-width: 900px) {
   .contenedor01 {
     display: flex;
-    flex-direction: row;
     background: #5b7989;
     width: 80%;
     color: #ffffff;
@@ -56,16 +138,11 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     list-style: none;
-
   }
 
-  .bloque01 li {
-    padding: 10px;
-
-  }
-
-  .bloque01 li a {
+  .bloque01 a {
     color: #ffffff;
+    padding: 10px;
   }
 
   .activa {
@@ -74,7 +151,6 @@ body {
 
   .contenedor02 {
     display: flex;
-    flex-direction: row;
     background: #82c3a6;
     width: 80%;
     height: 300px;
@@ -92,7 +168,6 @@ body {
 
   .contenedor03 {
     display: flex;
-    flex-direction: row;
     background-color: #d5c75f;
     width: 80%;
     margin: 0 auto 0 auto;
@@ -115,7 +190,6 @@ body {
 
   .contenedor04 {
     display: flex;
-    flex-direction: row;
     margin: auto;
     width: 80%;
     background: #C6d5c5;
@@ -132,7 +206,11 @@ body {
   }
 
   .contenedor04 p {
-    text-align: left;
+    text-align: center;
+  }
+
+  .espacio {
+    width: 25%;
   }
 
   .contenedor04 a {
@@ -140,5 +218,9 @@ body {
     text-align: left;
   }
 
-
+  .logos {
+    width: 5%;
+    align-content: space-between;
+  }
+}
 /* ======== CHEQUEADO Y APROBADO ========  */
