@@ -313,7 +313,7 @@ body {
 /* ======== CHEQUEADO Y APROBADO ========  */
 
 /* ======== EFECTOS PARA IMÁGENES ======== */
-  /* .desenfoque img {
+  .desenfoque img {
     filter: blur(10px);
     -webkit-filter: blur(10px);
   }
@@ -326,12 +326,12 @@ body {
   .sepia {
     filter: sepia(90%);
     -webkit-filter: sepia(90%);
-  } */
+  }
 /* ======================================= */
 
 /* ============= ANIMACIONES ============= */
 
-  .incline img {
+  /* .incline img {
     transition-property: padding-left, padding-bottom;
     transition-duration: 2s, 2s;
   }
@@ -339,7 +339,7 @@ body {
   .incline img:hover {
     padding-left: 5%;
     padding-bottom: 5%;
-  }
+  } */
 
 /* ======================================= */
 
