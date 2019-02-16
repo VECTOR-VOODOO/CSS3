@@ -4,6 +4,11 @@ body {
   font-family: "Dancing Script",cursive;
 }
 
+  /* .desenfoque img {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+  } */
+
 /* ============== IMPLEMENTANDO (EN REVISIÓN) ============== */
   @media (max-width: 899px) {
       .contenido {
@@ -76,6 +81,7 @@ body {
         display: flex;
         flex-direction: column;
         padding-top: 3%;
+        padding-bottom: 3%;
       }
 
       .contenedor03 img {
@@ -107,6 +113,47 @@ body {
 
       .contenedor04 a {
         color: #000000;
+      }
+/* ********** CONTENEDOR DE LA PÁGINA "RETRATROS" ********** */
+        .contenedor05 {
+          padding-top: 0.5%;
+          padding-bottom: 0.5%;
+          width: 100%;
+          background: #d5c75f;
+          margin: 0 auto 0 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          text-align: center;
+        }
+
+        .contenedor05 img {
+          width: 80%;
+          filter: drop-shadow(2px 2px 2px #02010a);
+        }
+/* ********************************************************* */
+
+/* ********** CONTENEDOR DE LA PÁGINA "PAISAJES" ********** */
+        .contenedor06 {
+          padding-top: 0.5%;
+          padding-bottom: 0.5%;
+          width: 100%;
+          background: #82c3a6;
+          margin: 0 auto 0 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          text-align: center;
+        }
+
+        .contenedor06 img {
+          width: 80%;
+          filter: drop-shadow(2px 2px 2px #02010a);
+        }
+/* ********************************************************* */
+
+      .separacion {
+        margin-top: 3%;
       }
 
       .logos {
@@ -217,10 +264,93 @@ body {
     color: black;
     text-align: left;
   }
+/* ********** CONTENEDOR DE LA PÁGINA "RETRATROS" ********** */
+  .contenedor05 {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 80%;
+    background: #d5c75f;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .contenedor05 img {
+    width: 80%;
+    filter: drop-shadow(2px 2px 2px #02010a);
+  }
+/* ********************************************************* */
+
+/* ********** CONTENEDOR DE LA PÁGINA "PAISAJES" ********** */
+  .contenedor06 {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 80%;
+    background: #82c3a6;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .contenedor06 img {
+    width: 80%;
+    filter: drop-shadow(2px 2px 2px #02010a);
+  }
+/* ********************************************************* */
+
+  .separacion {
+    margin-top: 1%;
+  }
 
   .logos {
     width: 5%;
     align-content: space-between;
   }
+
 }
 /* ======== CHEQUEADO Y APROBADO ========  */
+
+/* ======== EFECTOS PARA IMÁGENES ======== */
+  .desenfoque img {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+  }
+
+  .grayscale {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+
+  .sepia {
+    filter: sepia(90%);
+    -webkit-filter: sepia(90%);
+  }
+/* ======================================= */
+
+/* ============= ANIMACIONES ============= */
+
+  .incline img {
+    transition-property: padding-left, padding-bottom;
+    transition-duration: 2s, 2s;
+  }
+
+  .incline img:hover {
+    padding-left: 5%;
+    padding-bottom: 5%;
+  }
+
+/* ======================================= */
+
+
+/* ======== CARGA DE INICIO (EFECTO DE LOAD) ======== */
+/* @-webkit-keyframes carga {
+  from {
+    transform: ;
+  }
+  to {
+    height: 0;
+  }
+} */
+/* ================================================== */
