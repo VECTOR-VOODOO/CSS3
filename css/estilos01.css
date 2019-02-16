@@ -313,7 +313,7 @@ body {
 /* ======== CHEQUEADO Y APROBADO ========  */
 
 /* ======== EFECTOS PARA IMÁGENES ======== */
-  .desenfoque img {
+  /* .desenfoque img {
     filter: blur(10px);
     -webkit-filter: blur(10px);
   }
@@ -326,7 +326,7 @@ body {
   .sepia {
     filter: sepia(90%);
     -webkit-filter: sepia(90%);
-  }
+  } */
 /* ======================================= */
 
 /* ============= ANIMACIONES ============= */
