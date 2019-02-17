@@ -93,6 +93,13 @@ body {
         filter: drop-shadow(2px 2px 2px #02010a);
       }
 
+      .contenedor03 p a {
+        font-weight: bold;
+        text-align: center;
+        color: #000000;
+        font-size: 1.2em;
+      }
+
       .contenedor04 {
         text-align: center;
         width: 100%;
@@ -162,6 +169,8 @@ body {
       }
   }
 /* =========================================== */
+
+
 @media (min-width: 900px) {
   .contenedor01 {
     display: flex;
@@ -230,9 +239,11 @@ body {
     filter: drop-shadow(2px 2px 2px #02010a);
   }
 
-  .contenedor03 p {
+  .contenedor03 p a {
     font-weight: bold;
     text-align: center;
+    color: #000000;
+    font-size: 1.2em;
   }
 
   .contenedor04 {
