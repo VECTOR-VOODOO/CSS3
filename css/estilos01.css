@@ -4,22 +4,72 @@ body {
   font-family: "Dancing Script",cursive;
 }
 
+/* =========== CONFIGURACIÓN GLOBAL DEL PROYECTO WEB =========== */
+
+/* ======== EFECTOS PARA IMÁGENES ======== */
+  .desenfoque img {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+  }
+
+  .grayscale {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+
+  .sepia {
+    filter: sepia(90%);
+    -webkit-filter: sepia(90%);
+  }
+
+/* ======== CARGA DE INICIO (EFECTO DE LOAD) ======== */
+  @-webkit-keyframes carga {
+    0% {margin-top: 150%}
+    60% {margin-top: -5%}
+    100% {margin-top: 0%}
+  }
+
+/* ============= ANIMACIONES ============= */
+  .Rotado:hover {
+    border: 2px solid #82c3a6;
+    box-shadow: 2px 2px #82c3a6;
+    transform: rotate(10deg);
+    transition: transform 2s;
+  }
+
+  .Traslado:hover {
+    border: 2px solid #82c3a6;
+    box-shadow: 2px 2px #82c3a6;
+    transform: translate(20px,-5px);
+    transition: transform 2s;
+  }
+
 /* ==== EJECUCIÓN DE LA ANIMACIÓN DE CARGA DE CADA PÁGINA ==== */
   .contenido {
     animation: carga 1s;
   }
 
-/* ============== IMPLEMENTANDO (EN REVISIÓN) ============== */
-  @media (max-width: 899px) {         /* VERSIÓN MÓVIL */
+  .contenedor03 img {     /* Según Punto 3, consideración 2. */
+    border: 1px solid black;
+  }
+
+  /* Según Punto 3 de Consideraciones Generales */
+  .contenedor02 img, .contenedor03 img, .contenedor05 img, .contenedor06 img {
+    filter: drop-shadow(2px 2px 2px #02010a);
+  }
+
+  /* Efecto global para la la hoja activa (Ambas versiones) */
+  .activa {
+    text-decoration: none;
+  }
+
+/* ==================== VERSIÓN MÓVIL ==================== */
+  @media (max-width: 899px) {
       .contenido {
         width: 100%;
         display: flex;
         flex-direction: column;
         text-align: center;
-      }
-
-      .activa {
-        text-decoration: none;
       }
 
       .bloque01 {
@@ -72,7 +122,6 @@ body {
         display: flex;
         flex-direction: column;
         margin: auto;
-        filter: drop-shadow(2px 2px 2px #02010a);
       }
 
       .contenedor03 {
@@ -91,7 +140,6 @@ body {
         display: flex;
         flex-direction: column;
         margin: auto;
-        filter: drop-shadow(2px 2px 2px #02010a);
       }
 
       .contenedor03 p a {
@@ -137,7 +185,6 @@ body {
 
         .contenedor05 img {
           width: 80%;
-          filter: drop-shadow(2px 2px 2px #02010a);
         }
 
 /* ********** CONTENEDOR DE LA PÁGINA "PAISAJES" ********** */
@@ -155,7 +202,6 @@ body {
 
         .contenedor06 img {
           width: 80%;
-          filter: drop-shadow(2px 2px 2px #02010a);
         }
 /* ********************************************************* */
       .separacion {
@@ -167,9 +213,9 @@ body {
         align-content: space-between;
       }
   }
-/* =========================================== */
 
-@media (min-width: 900px) {               /* VERSIÓN DESKTOP */
+/* ==================== VERSIÓN DESKTOP ==================== */
+@media (min-width: 900px) {
   .contenedor01 {
     display: flex;
     background: #5b7989;
@@ -199,10 +245,6 @@ body {
     padding: 10px;
   }
 
-  .activa {
-    text-decoration: none;
-  }
-
   .contenedor02 {
     display: flex;
     background: #82c3a6;
@@ -217,7 +259,6 @@ body {
     width: 80%;
     height: 80%;
     align-content: center;
-    filter: drop-shadow(2px 2px 2px #02010a);
   }
 
   .contenedor03 {
@@ -234,7 +275,6 @@ body {
     width: 80%;
     align-items: center;
     align-content: center;
-    filter: drop-shadow(2px 2px 2px #02010a);
   }
 
   .contenedor03 p a {
@@ -265,7 +305,7 @@ body {
     text-align: center;
   }
 
-  .espacio {
+  .espacio {              /* Ancho de cada una de las columnas del footer */
     width: 25%;
   }
 
@@ -273,8 +313,8 @@ body {
     color: black;
     text-align: left;
   }
-/* ********** CONTENEDOR DE LA PÁGINA "RETRATROS" ********** */
-  .contenedor05 {
+
+  .contenedor05 {         /* Contenedor de las imágenes de la página "retratos" */
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     width: 80%;
@@ -287,11 +327,9 @@ body {
 
   .contenedor05 img {
     width: 80%;
-    filter: drop-shadow(2px 2px 2px #02010a);
   }
 
-/* ********** CONTENEDOR DE LA PÁGINA "PAISAJES" ********** */
-  .contenedor06 {
+  .contenedor06 {         /* Contenedor de las imágenes de la página "paisajes" */
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     width: 80%;
@@ -304,54 +342,15 @@ body {
 
   .contenedor06 img {
     width: 80%;
-    filter: drop-shadow(2px 2px 2px #02010a);
   }
-/* ********************************************************* */
 
-  .separacion {
+  .separacion {           /* Espaciado entre imágenes y el margen superior de su contenedor */
     margin-top: 1%;
   }
 
-  .logos {
+  .logos {                /* Configuración de dimensión y disposición de logos de RR.SS. */
     width: 5%;
     align-content: space-between;
   }
 
 }
-
-/* Desde este punto en adelante, la programación afecta de forma global al proyecto web, a todas sus páginas. */
-
-/* ======== EFECTOS PARA IMÁGENES ======== */
-  .desenfoque img {
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-  }
-
-  .grayscale {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-  }
-
-  .sepia {
-    filter: sepia(90%);
-    -webkit-filter: sepia(90%);
-  }
-
-/* ======== CARGA DE INICIO (EFECTO DE LOAD) ======== */
-  @-webkit-keyframes carga {
-    0% {margin-top: 150%}
-    60% {margin-top: -5%}
-    100% {margin-top: 0%}
-  }
-
-/* ============= ANIMACIONES ============= */
-  .Rotado:hover {
-    transform: rotate(5deg);
-    transition: transform 2s;
-  }
-
-  .Traslado:hover {
-    transform: translate(10px,-15px);
-    transition: transform 2s;
-  }
-/* ======================================= */
