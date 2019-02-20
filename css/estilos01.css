@@ -6,20 +6,23 @@ body {
 
 /* =========== CONFIGURACIÓN GLOBAL DEL PROYECTO WEB =========== */
 
-/* ======== EFECTOS PARA IMÁGENES ======== */
-  .desenfoque img {
+/* ======== FILTROS PARA IMÁGENES ======== */
+  .desenfoque {
     filter: blur(10px);
     -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
   }
 
   .grayscale {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
   }
 
   .sepia {
     filter: sepia(90%);
     -webkit-filter: sepia(90%);
+    -moz-filter: sepia(90%);
   }
 
 /* ======== CARGA DE INICIO (EFECTO DE LOAD) ======== */
